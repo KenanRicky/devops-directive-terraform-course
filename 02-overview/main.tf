@@ -11,7 +11,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_instance" "example" {
+resource "aws_instance" "terraform_test" {
   ami           = "ami-011899242bb902164" # Ubuntu 20.04 LTS // us-east-1
   instance_type = "t2.micro"
 }
