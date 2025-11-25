@@ -205,10 +205,9 @@ resource "aws_route53_record" "root" {
 resource "aws_db_instance" "db" {
   allocated_storage    = 20
   engine               = "postgres"
-  engine_version       = "14.10"
+  engine_version       = "14.20"
   instance_class       = "db.t3.micro"
-  
-  name                = "mydb"
+  db_name              = "mydb"
   username             = "foo"
   password             = "foobarbaz"
   skip_final_snapshot  = true
